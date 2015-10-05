@@ -49,7 +49,7 @@ double checking(double x, double y, double z, int n0, int n1){
     }
     
     a0 = pow(x, y + 1) / pow(x - y, 1 / z);
-    a1 = y / (n0 + 1) * fabs(x + y);
+    a1 = y / ((n0 + 1) * fabs(x + y));
     a2 = pow(n1 + sin(y),cos(x) / (z + fabs(x - y)));
     
     double a = a0 + a1 + a2;
