@@ -29,6 +29,10 @@ int satisfies(int a, int b, int c) {
 		else {
 			result = 0;
 		}
+		//Якщо sum2 менше -256, а modmin є степенню двійки і modmin менше 256 то результат буде True
+		if (sum2 < -256 && (log2(modmin)-(int)log2(modmin))==0 && modmin < 256) {
+			result = 1;
+		}
 		//Результат: True якщо модуль sum2 більше 16 або modmin більше 8;
 		if (abs(sum2) > 16 || abs(modmin) > 8 ) {
 				result = 1;
@@ -68,17 +72,17 @@ int satisfies(int a, int b, int c) {
 		//Якщо два від’ємних числа то:
 		else if (a < 0 && b < 0 && c > 0) {
 			//Результат - чи сума цих двох від’ємних чисел помножена на суму n0 i n1 більша за -256
-			if (((a + b)*(0 + 4))>-256) {
+			if (((a + b)*(3 + 2))>-256) {
 				result = 1;
 			}
 		}
 		else if (a < 0 && b > 0 && c < 0) {
-			if (((a + c)*(0 + 4))>-256) {
+			if (((a + c)*(3 + 2))>-256) {
 				result = 1;
 			}
 		}
 		else if (a > 0 && b < 0 && c < 0) {
-			if (((b + c)*(0 + 4))>-256) {
+			if (((b + c)*(3 + 2))>-256) {
 				result = 1;
 			}
 		}
