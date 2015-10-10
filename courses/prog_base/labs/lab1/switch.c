@@ -1,8 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
 #endif
+
+int main(){
+	return 1;
+}
+
 
 int exec(int op, int a, int b) {
 	int result;
@@ -43,9 +50,28 @@ int exec(int op, int a, int b) {
 		result = a%b;
 		break;
 	case 8:
-		result = max(a, b);
+		//max(a,b;
+		if (a > b){
+			result = a;
+		}
+		else if(b > a){
+			result = b;
+		}
+		else {
+			result = 0;
+		}
+		break;
 	case 9:
-		result = min(a, b);
+		//min(a,b)
+		if (a < b){
+			result = a;
+		}
+		else if(b < a) {
+			result = b;
+		}
+		else {
+			result = 0;
+		}
 		break;
 	case 10:
 		switch (abs(b)%8)
@@ -79,7 +105,7 @@ int exec(int op, int a, int b) {
 	case 11:
 		result = (3+1)*cos(b*M_PI)/(a-2);
 		break;
-	}
+	
 	default:
 		if (op < 100) {
 			result = (op%abs(a + 1)) + (op%abs(b + 1));

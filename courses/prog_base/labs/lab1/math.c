@@ -58,9 +58,9 @@ double checking(double x, double y, double z, int n0, int n1){
 }
 int main(){
 	
-	double x = 0;
-	double y = 0;
-	double z = 0;
+	double x = 1;
+	double y = 2;
+	double z = 3;
 	double result;
 	
 	result = calc(x,y,z);
