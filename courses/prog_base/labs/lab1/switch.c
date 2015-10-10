@@ -44,27 +44,8 @@ int exec(int op, int a, int b) {
 		break;
 	case 8:
 		result = max(a, b);
-		 if (a>b){
-		 	return a;
-		 }
-		 if (a<b){
-		 	return b;
-		 }
-		 else{
-		 	return 0;
-		 }
-		break;
 	case 9:
 		result = min(a, b);
-		if (a<b){
-			return a;
-		}
-		 if (a>b){
-		 	return b;
-		 }
-		 else{
-		 	return 0;
-		 }
 		break;
 	case 10:
 		switch (abs(b)%8)
