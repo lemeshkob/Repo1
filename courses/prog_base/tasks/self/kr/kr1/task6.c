@@ -26,8 +26,8 @@ int main()
 
 	struct points 
 	{
-		char pointA[3] = {xa, ya, za};
-		char pointB[3] = {xb, yb, zb};
-		char pointC[3] = {xc, yc, zc};
+		float pointA[3] = {xa, ya, za};
+		float pointB[3] = {xb, yb, zb};
+		float pointC[3] = {xc, yc, zc};
 	}
 }
