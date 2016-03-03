@@ -45,7 +45,7 @@ void add_interval(plural_t * self,int first,int second)
         printf("too long interval\n");
 }
 
-void put_plural(plural_t * self)
+void plural_put(plural_t * self)
 {
     int i;
     for(i=0; i<self->count; i++)
@@ -55,7 +55,7 @@ void put_plural(plural_t * self)
     printf("\n\n");
 }
 
-void random_plural(plural_t * self)
+void plural_random(plural_t * self)
 {
     int i;
     self->count=rand()%10+1;

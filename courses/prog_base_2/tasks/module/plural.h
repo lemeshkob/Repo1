@@ -9,8 +9,8 @@ void plural_free(plural_t * self);
 
 void add_elem(plural_t * self, int elem);
 void add_interval(plural_t * self,int first,int second);
-void put_plural(plural_t * self);
-void random_plural(plural_t * self);
+void plural_put(plural_t * self);
+void plural_random(plural_t * self);
 
 plural_t* plural_merger(plural_t * p1, plural_t * p2);
 plural_t* plural_intersection(plural_t * p1, plural_t * p2);
