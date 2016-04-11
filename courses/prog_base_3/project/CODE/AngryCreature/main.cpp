@@ -18,7 +18,7 @@ int main()
 	herosprite.setTextureRect(IntRect(0, 71, 38, 67));
 	herosprite.setPosition(250, 250);
 
-	float CurrentFrame = 0;//хранит текущий кадр
+	float CurrentFrame = 0;//С…СЂР°РЅРёС‚ С‚РµРєСѓС‰РёР№ РєР°РґСЂ
 	Clock clock;
 
 	while (window.isOpen())
@@ -38,20 +38,19 @@ int main()
 		}
 
 
-		///////////////////////////////////////////Управление персонажем с анимацией////////////////////////////////////////////////////////////////////////
-		if ((Keyboard::isKeyPressed(Keyboard::Left))) { //если нажата клавиша стрелка влево или англ буква А
-			CurrentFrame += 0.005*time; //служит для прохождения по "кадрам". переменная доходит до трех суммируя произведение времени и скорости. изменив 0.005 можно изменить скорость анимации
-			if (CurrentFrame < -8) CurrentFrame += 8; //проходимся по кадрам с первого по третий включительно. если пришли к третьему кадру - откидываемся назад.
-			herosprite.setTextureRect(IntRect(38 * int(CurrentFrame) + 38, 71, -38, 67)); //проходимся по координатам Х. получается 96,96*2,96*3 и опять 96
-			herosprite.move(-0.1*time, 0);//происходит само движение персонажа влево
+	
+		if ((Keyboard::isKeyPressed(Keyboard::Left))) { 
+			CurrentFrame += 0.005*time; 
+			if (CurrentFrame < -8) CurrentFrame += 8; 
+			herosprite.setTextureRect(IntRect(38 * int(CurrentFrame) + 38, 71, -38, 67)); 
+			herosprite.move(-0.1*time, 0);
 		}
 
 		if ((Keyboard::isKeyPressed(Keyboard::Right))) {
-			CurrentFrame += 0.005*time; //служит для прохождения по "кадрам". переменная доходит до трех суммируя произведение времени и скорости. изменив 0.005 можно изменить скорость анимации
-			if (CurrentFrame > 8) CurrentFrame -= 8; //проходимся по кадрам с первого по третий включительно. если пришли к третьему кадру - откидываемся назад.
-			herosprite.setTextureRect(IntRect(38 * int(CurrentFrame), 71, 38, 67)); //проходимся по координатам Х. получается 96,96*2,96*3 и опять 96
-
-			herosprite.move(0.1*time, 0);//происходит само движение персонажа вправо
+			CurrentFrame += 0.005*time; 
+			if (CurrentFrame > 8) CurrentFrame -= 8;
+			herosprite.setTextureRect(IntRect(38 * int(CurrentFrame), 71, 38, 67));
+			herosprite.move(0.1*time, 0);
 
 		}
 		window.clear();
