@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <windows.h>
@@ -112,3 +113,6 @@ int main()
 	return 0;
 >>>>>>> 6f1e32e8d7580468c1ad1fcf82e9f847b58c9785
 }
+=======
+
+>>>>>>> origin/master
