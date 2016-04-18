@@ -384,7 +384,16 @@
 1458590329 c:\users\lemes\desktop\йспяюв\code\angrycreature\anim.hpp
 	<SFML/Graphics.hpp>
 
-1460403689 source:c:\users\lemes\desktop\йо╡\йспяюв\code\angrycreature\main.cpp
+1461004242 source:c:\users\lemes\desktop\йо╡\йспяюв\code\angrycreature\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
+	<windows.h>
+	"anim.hpp"
+
+1461005047 c:\users\lemes\desktop\йо╡\йспяюв\code\angrycreature\anim.hpp
+	<SFML/Graphics.hpp>
+	<stdio.h >
+	<stdlib.h>
+	<iostream>
+	<windows.h>
 
