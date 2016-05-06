@@ -35,7 +35,11 @@ int main()
                 window.close();
             }
         }
+<<<<<<< HEAD
         /// äâèæåíèå
+=======
+    /// äâèæåíèå
+>>>>>>> 22c3b98c2ac5b6d35d95b8eba29b8ddc52ca1bcf
         if ((Keyboard::isKeyPressed(Keyboard::Left) || (Keyboard::isKeyPressed(Keyboard::A))))
         {
             Hero.dir = 1;
@@ -73,4 +77,7 @@ int main()
     }
 
     return 0;
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 22c3b98c2ac5b6d35d95b8eba29b8ddc52ca1bcf
