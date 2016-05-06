@@ -9,12 +9,12 @@ int main()
 {
     RenderWindow window(sf::VideoMode(1366, 768), "Angry Creature", Style::Fullscreen);
 
-    Image map_image;//объект изображения для карты
-    map_image.loadFromFile("map.png");//загружаем файл для карты
-    Texture map;//текстура карты
-    map.loadFromImage(map_image);//заряжаем текстуру картинкой
-    Sprite s_map;//создаём спрайт для карты
-    s_map.setTexture(map);//заливаем текстуру спрайтом
+    Image map_image;
+    map_image.loadFromFile("map.png");
+    Texture map;
+    map.loadFromImage(map_image);
+    Sprite s_map;
+    s_map.setTexture(map);
 
     Player Hero("warrior.png", 10, 10, 47.0, 67.0);
     float CurrentFrame = 0;
@@ -35,12 +35,7 @@ int main()
                 window.close();
             }
         }
-<<<<<<< HEAD
-        /// äâèæåíèå
-=======
-    /// äâèæåíèå
->>>>>>> 22c3b98c2ac5b6d35d95b8eba29b8ddc52ca1bcf
-        if ((Keyboard::isKeyPressed(Keyboard::Left) || (Keyboard::isKeyPressed(Keyboard::A))))
+        if ((Keyboard::isKeyPressed(Keyboard::Left)))
         {
             Hero.dir = 1;
             Hero.speed = 0.1;
@@ -49,7 +44,7 @@ int main()
             Hero.sprite.setTextureRect(IntRect(47 * int(CurrentFrame) + 47, 0, -47, 67));
         }
 
-        if ((Keyboard::isKeyPressed(Keyboard::Right) || (Keyboard::isKeyPressed(Keyboard::D))))
+        if ((Keyboard::isKeyPressed(Keyboard::Right)))
         {
             Hero.dir = 0;
             Hero.speed = 0.1;
@@ -77,7 +72,6 @@ int main()
     }
 
     return 0;
-<<<<<<< HEAD
+
 }
-=======
->>>>>>> 22c3b98c2ac5b6d35d95b8eba29b8ddc52ca1bcf
+
