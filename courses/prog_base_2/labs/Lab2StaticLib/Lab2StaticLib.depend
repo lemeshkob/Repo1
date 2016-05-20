@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1385320480 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\Самостійно\lab2staticlib\main.c
+
+1463762644 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\Самостійно\lab2staticlib\bytelist.c
+	<stdio.h>
+	<stdlib.h>
+	"byteList.h"
+
+1463763174 c:\users\lemes\desktop\КПІ\Модульне програмування на С\Самостійно\lab2staticlib\bytelist.h
+
+1385320480 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab2staticlib\main.c
+
+1463768646 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab2staticlib\bytelist.c
+	<stdio.h>
+	<stdlib.h>
+	"byteList.h"
+
+1463768606 c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab2staticlib\bytelist.h
+

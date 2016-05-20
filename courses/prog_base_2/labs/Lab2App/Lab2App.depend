@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1463769061 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab2app\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"byteList.h"
+
+1463768606 c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab2app\bytelist.h
+
