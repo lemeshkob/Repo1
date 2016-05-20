@@ -2,9 +2,16 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main(){
-	return 1;
+int satisfies(int, int, int);
+
+int main() {
+    int a = 0, b = 0, c = 0; 
+    int result;
+    result = satisfies(a, b, c);
+    printf("%i", result);
+    return 0;
 }
+
 
 int satisfies(int a, int b, int c) {
 	int result;
@@ -48,12 +55,14 @@ int satisfies(int a, int b, int c) {
 		//Якщо тільки одне з них від’ємне то:
 		if (a < 0 && b > 0 && c > 0) {
 			//Результат - чи це від’ємне число більше -256
-			if (a > -256) {
-				result = 1;
-			}
-			else {
-				result = 0;
-			}
+			// замінити тернарним оператором
+			return a>-256; 
+		//	 {
+		//		result = 1;
+		//	}
+		//	else {
+		//		result = 0;
+		//	}
 		}
 		else if (a > 0 && b < 0 && c > 0) {
 			if (b > -256) {

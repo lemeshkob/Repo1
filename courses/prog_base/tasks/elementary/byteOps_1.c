@@ -7,7 +7,7 @@ int printBit(char myByte, int index) {
 	mask <<= index - 1;
 	mask &= myByte;
 	mask >>= index - 1;
-	if (mask == -1) {
+	if (mask == -1) {1
 		mask = 1;
 	}
 	return mask;

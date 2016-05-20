@@ -130,7 +130,7 @@ while(!isdigit(*noname))
     printf("%s", noname);
 
     free(noname);
-    //free(cat);
+    free(cat);
    // free(array);
    // free(mass);
     return 0;

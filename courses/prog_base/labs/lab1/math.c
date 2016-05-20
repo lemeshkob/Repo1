@@ -57,10 +57,10 @@ double checking(double x, double y, double z, int n0, int n1){
     return a;
 }
 int main(){
-	
-	double x = 1;
+	//Щоб вивело число
+	double x = 125;
 	double y = 2;
-	double z = 3;
+	double z = 315;
 	double result;
 	
 	result = calc(x,y,z);

@@ -1,33 +1,52 @@
-#include "stdlib.h"
-#include "stdio.h"
-#include "math.h"
+#include <stdlib.h> 
+#include <stdio.h> 
+#include <windows.h> 
 
-int coordinates()
-{
-	float xa, ya, za, xb, yb, zb, xc, yc, zc;
-	int AB,AC,BC;
 
-	AB = sqrt(pow((xb-xa),2) + pow((yb-ya),2) + pow((zb-za),2));
-	AC = sqrt(pow((xc-xa),2) + pow((yc-ya),2) + pow((zc-za),2));
-	BC = sqrt(pow((xc-xb),2) + pow((yc-yb),2) + pow((zc-zb),2));
+int main(void) 
+{ 
+int Yellow = BACKGROUND_RED | BACKGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_RED; 
+int Green = BACKGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_RED; 
+int White = BACKGROUND_RED | BACKGROUND_GREEN |BACKGROUND_BLUE | FOREGROUND_BLUE | FOREGROUND_RED; 
+int Standart = FOREGROUND_BLUE | FOREGROUND_RED | FOREGROUND_GREEN; 
+int k,t; 
 
-}
+HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE); 
+COORD pos; 
 
-int main()
-{
-	float xa, ya, za, xb, yb, zb, xc, yc, zc;
+for(pos.Y = 24 ;pos.Y>=0 ; pos.Y— ) 
+{ 
+if(pos.Y%2==0) 
+{ 
+for (pos.X = 0 ;pos.X<80 ; pos.X ++ ) 
+{ 
+SetConsoleCursorPosition(hConsole, pos); 
 
-	printf("%s\n","Enter x y z of A point" );
-	scanf("%f %f %f", &xa, &ya, &za);
-	printf("%s\n","Enter x y z of B point" );
-	scanf("%f %f %f", &xb, &yb, &zb);
-	printf("%s\n","Enter x y z of C point" );
-	scanf("%f %f %f", &xc, &yc, &zc);
+if((pos.X+pos.Y)%3==0) SetConsoleTextAttribute(hConsole, Green ); 
+if((pos.X+pos.Y)%3==1) SetConsoleTextAttribute(hConsole, Yellow); 
+if((pos.X+pos.Y)%3==2) SetConsoleTextAttribute(hConsole, White ); 
+puts("*"); 
+Sleep(1); 
+} 
+} 
+if(pos.Y%2==1) 
+{ 
+for (pos.X = 79;pos.X >=0 ; pos.X —) 
+{ 
+SetConsoleCursorPosition(hConsole, pos); 
 
-	struct points 
-	{
-		float pointA[3] = {xa, ya, za};
-		float pointB[3] = {xb, yb, zb};
-		float pointC[3] = {xc, yc, zc};
-	}
+if((pos.X+pos.Y)%3==0) SetConsoleTextAttribute(hConsole, Green ); 
+if((pos.X+pos.Y)%3==1) SetConsoleTextAttribute(hConsole, Yellow ); 
+if((pos.X+pos.Y)%3==2) SetConsoleTextAttribute(hConsole, White ); 
+puts("*"); 
+Sleep(1); 
+} 
+} 
+} 
+
+SetConsoleTextAttribute(hConsole, Standart ); 
+pos.Y=25; 
+pos.X=0; 
+SetConsoleCursorPosition(hConsole, pos); 
+
 }

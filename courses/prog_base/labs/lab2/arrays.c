@@ -4,13 +4,15 @@
 #include <time.h>
 
 /* Заповнює масив випадковими цілими числами в діапазоні [1..99] (включно) */
-void fillRand1(int arr[], int size)
+int fillRand1(int arr[], int size)
 {
 	int i;
 	for (i = 1; i < size; ++i)
 	{
 		arr[i] = (rand()&99 + 1);
+		printf("%i ", arr[i]);
 	}
+	return 0;
 }
 
 /* Перевіряє чи всі елементи масиву знаходяться у діапазоні [1..99] (включно). Повертає 1, якщо умова задовольняється і 0 - якщо не задовольняється */
@@ -86,7 +88,7 @@ int meanIndex(int arr[], int size)
 /* Знаходить індекс першого мінімального елемента масиву */
 int minIndex(int arr[], int size)
 {
-	
+
 	int i;
 	int minValue;
 	int minIndex = 0;
@@ -105,7 +107,7 @@ int minIndex(int arr[], int size)
 
 int maxIndex(int arr[], int size)
 {
-	
+
 	int i;
 	int maxValue;
 	int maxIndex = 0;
@@ -135,7 +137,7 @@ int maxOccurance(int arr[], int size)
 	//	int count = 1;
 		for(j = i + 1; j < size; ++j)
 		{
-			
+
 			if(arr[i] == arr[j])
 			{
 				++countArr[i];
@@ -148,7 +150,7 @@ int maxOccurance(int arr[], int size)
 }
 
 /* ділення */
-void div(int arr1[], int arr2[], int res[], int size)
+void Div(int arr1[], int arr2[], int res[], int size)
 {
 	int i;
 
@@ -177,7 +179,7 @@ int lteq(int arr1[], int arr2[], int size)
 	}
 	return 1;
 }
-// !(a<=b) = a>b 
+// !(a<=b) = a>b
 
 /* lxor - logical XOR */
 void lxor(int arr1[], int arr2[], int res[], int size)
@@ -191,15 +193,15 @@ void lxor(int arr1[], int arr2[], int res[], int size)
 }
 int main()
 {
-	int arr[5];
-	int i;
-	/*for(i = 0; i < 5; ++i)
-	{
-		scanf("%d", &arr[i]);
-	}
-	printf("%i\n", function(arr,5));
-	*/
 	srand(time(NULL));
+	int n = 0;
+	int a = 0;
+	puts("enter quantity of numbers in your array");
+	scanf("%i", &n);
+	int arr[n];
+	int i;
+	puts("here it is :\n");
+	printf("%i",fillRand1(arr, n));
 	getchar();
 	return 0;
 }

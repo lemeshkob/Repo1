@@ -6,8 +6,19 @@
 #define M_PI 3.14159265358979323846
 #endif
 
-int main(){
-	return 1;
+int exec(int op, int a, int b);
+
+int main() {
+	int resultofNum = 2%3;
+	printf("result = %i", resultofNum);
+	return resultofNum;
+}	
+	//2.5%0.5
+/*    int a = 0, b = 0, c = 0; 
+    int result;
+    result = exec(a, b, c);
+    printf("%i", result);
+    return 0;
 }
 
 
@@ -119,3 +130,4 @@ int exec(int op, int a, int b) {
 
 	return result;
 }
+*/
