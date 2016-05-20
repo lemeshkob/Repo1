@@ -18,7 +18,7 @@ void plural_free(plural_t * self)
     free(self);
 }
 
-void add_elem(plural_t * self, int elem)
+void plural_addEl(plural_t * self, int elem)
 {
     if(self->count<100)
     {
@@ -29,7 +29,7 @@ void add_elem(plural_t * self, int elem)
         printf("Plural is full");
 }
 
-void add_interval(plural_t * self,int first,int second)
+void plural_add_interval(plural_t * self,int first,int second)
 {
     int i,j=0;
     if(self->count+(second-first+1)<=100)

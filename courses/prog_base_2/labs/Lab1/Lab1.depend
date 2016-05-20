@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1462658784 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab1\main.c
+	<stdlib.h>
+	<stdarg.h>
+	<stddef.h>
+	<setjmp.h>
+	<cmocka.h>
+	<stdio.h>
+	<stdlib.h>
+	"file.h"
+	"folder.h"
+
+1461345731 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab1\dictionary.c
+	<stdlib.h>
+	<string.h>
+	"dictionary.h"
+
+1461343011 c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab1\dictionary.h
+
+1461344403 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab1\file.c
+	<stdlib.h>
+	"file.h"
+
+1461343554 c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab1\file.h
+	"dictionary.h"
+
+1461343677 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab1\folder.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"folder.h"
+	"file.h"
+
+1461343416 c:\users\lemes\desktop\КПІ\Модульне програмування на С\Лабораторні\lab1\folder.h
+	"file.h"
+	"dictionary.h"
+
