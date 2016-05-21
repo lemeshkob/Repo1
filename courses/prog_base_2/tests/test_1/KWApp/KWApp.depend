@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1463824567 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\КР\КР1\kwapp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"videoPlayer.h"
+
+1463824698 c:\users\lemes\desktop\КПІ\Модульне програмування на С\КР\КР1\kwapp\videoplayer.h
+

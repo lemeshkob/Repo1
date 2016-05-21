@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1463825277 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\КР\КР1\kwstaticlib\list.c
+	<stdlib.h>
+	"list.h"
+
+1463819744 c:\users\lemes\desktop\КПІ\Модульне програмування на С\КР\КР1\kwstaticlib\list.h
+
+1446671346 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\КР\КР1\kwstaticlib\main.c
+
+1463824151 source:c:\users\lemes\desktop\КПІ\Модульне програмування на С\КР\КР1\kwstaticlib\videoplayer.c
+	<stdlib.h>
+	<stdio.h>
+	"VideoPlayer.h"
+
+1463823356 c:\users\lemes\desktop\КПІ\Модульне програмування на С\КР\КР1\kwstaticlib\videoplayer.h
+
