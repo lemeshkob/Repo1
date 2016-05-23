@@ -53,7 +53,7 @@ int main()
         Sleep(750);
     }
 
-    FreeLibrary(dll);
+    FreeLibrary(dll->hLib);
     byteList_free(list);
     return 0;
 }
