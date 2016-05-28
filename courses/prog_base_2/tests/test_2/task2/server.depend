@@ -1,0 +1,216 @@
+# depslib dependency file v1.0
+1463806279 source:c:\progs\op\projects\courses\prog_base_2\tests\test_2\server\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1463806279 c:\progs\op\projects\courses\prog_base_2\tests\test_2\server\cjson.h
+
+1464426477 source:c:\progs\op\projects\courses\prog_base_2\tests\test_2\server\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socket.h"
+	"server.h"
+
+1464417854 c:\progs\op\projects\courses\prog_base_2\tests\test_2\server\socket.h
+
+1464426499 c:\progs\op\projects\courses\prog_base_2\tests\test_2\server\server.h
+	<stdio.h>
+	<stdlib.h>
+	"socket.h"
+
+1464426758 source:c:\progs\op\projects\courses\prog_base_2\tests\test_2\server\server.c
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	"string.h"
+	"socket.h"
+	"server.h"
+	"cJSON.h"
+
+1464417904 source:c:\progs\op\projects\courses\prog_base_2\tests\test_2\server\socket.c
+	<winsock2.h>
+	"socket.h"
+
+1463802679 source:d:\kr_2\server\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1463802679 d:\kr_2\server\cjson.h
+
+1464432250 source:d:\kr_2\server\main.c
+	<stdlib.h>
+	<string.h>
+	"socket.h"
+	"server.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socket.h"
+	"server.h"
+	<winsock2.h>
+	<windows.h>
+	"cJSON.h"
+	<time.h>
+
+1464414254 d:\kr_2\server\socket.h
+
+1464431871 d:\kr_2\server\server.h
+	<stdio.h>
+	<stdlib.h>
+	"socket.h"
+
+1464432278 source:d:\kr_2\server\server.c
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	"string.h"
+	"socket.h"
+	"server.h"
+	"cJSON.h"
+
+1464414304 source:d:\kr_2\server\socket.c
+	<winsock2.h>
+	"socket.h"
+
+1463802680 source:c:\2.репозиторий\hello-world\courses\prog_base_2\tests\tets_2\server\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1463802680 c:\2.репозиторий\hello-world\courses\prog_base_2\tests\tets_2\server\cjson.h
+
+1464435176 source:c:\2.репозиторий\hello-world\courses\prog_base_2\tests\tets_2\server\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socket.h"
+	"server.h"
+	<winsock2.h>
+	<windows.h>
+	"cJSON.h"
+	<time.h>
+
+1464414256 c:\2.репозиторий\hello-world\courses\prog_base_2\tests\tets_2\server\socket.h
+
+1464431872 c:\2.репозиторий\hello-world\courses\prog_base_2\tests\tets_2\server\server.h
+	<stdio.h>
+	<stdlib.h>
+	"socket.h"
+
+1464432280 source:c:\2.репозиторий\hello-world\courses\prog_base_2\tests\tets_2\server\server.c
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	"string.h"
+	"socket.h"
+	"server.h"
+	"cJSON.h"
+
+1464414306 source:c:\2.репозиторий\hello-world\courses\prog_base_2\tests\tets_2\server\socket.c
+	<winsock2.h>
+	"socket.h"
+
+1463806280 source:e:\tasks-master\tasks\courses\prog_base_2\tests\test_2\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1463806280 e:\tasks-master\tasks\courses\prog_base_2\tests\test_2\cjson.h
+
+1464417906 source:e:\tasks-master\tasks\courses\prog_base_2\tests\test_2\socket.c
+	<winsock2.h>
+	"socket.h"
+
+1464417856 e:\tasks-master\tasks\courses\prog_base_2\tests\test_2\socket.h
+
+1464439245 source:e:\tasks-master\tasks\courses\prog_base_2\tests\test_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socket.h"
+	"server.h"
+	<winsock2.h>
+	<windows.h>
+	"cJSON.h"
+	<time.h>
+
+1464435472 e:\tasks-master\tasks\courses\prog_base_2\tests\test_2\server.h
+	<stdio.h>
+	<stdlib.h>
+	"socket.h"
+
+1464439245 source:e:\tasks-master\tasks\courses\prog_base_2\tests\test_2\server.c
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	"string.h"
+	"socket.h"
+	"server.h"
+	"cJSON.h"
+
+1463806280 source:c:\users\lemes\desktop\test_2\cjson.c
+	<string.h>
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+	<float.h>
+	<limits.h>
+	<ctype.h>
+	"cJSON.h"
+
+1463806280 c:\users\lemes\desktop\test_2\cjson.h
+
+1464439246 source:c:\users\lemes\desktop\test_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socket.h"
+	"server.h"
+	<winsock2.h>
+	<windows.h>
+	"cJSON.h"
+	<time.h>
+
+1464417856 c:\users\lemes\desktop\test_2\socket.h
+
+1464435472 c:\users\lemes\desktop\test_2\server.h
+	<stdio.h>
+	<stdlib.h>
+	"socket.h"
+
+1464439246 source:c:\users\lemes\desktop\test_2\server.c
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	"string.h"
+	"socket.h"
+	"server.h"
+	"cJSON.h"
+
+1464417906 source:c:\users\lemes\desktop\test_2\socket.c
+	<winsock2.h>
+	"socket.h"
+
