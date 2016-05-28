@@ -57,9 +57,9 @@ void server_info(socket_t * client)
     char homeBuf[1024];
 
     cJSON * jInfo = cJSON_CreateObject();
-    cJSON_AddItemToObject(jInfo, "student", cJSON_CreateString("Sasha Pishchela"));
-    cJSON_AddItemToObject(jInfo, "group", cJSON_CreateString("KP-52"));
-    cJSON_AddItemToObject(jInfo, "variant", cJSON_CreateNumber(38));
+    cJSON_AddItemToObject(jInfo, "student", cJSON_CreateString("Borys Lemeshko"));
+    cJSON_AddItemToObject(jInfo, "group", cJSON_CreateString("KP-51"));
+    cJSON_AddItemToObject(jInfo, "variant", cJSON_CreateNumber(16));
     char * pageText = cJSON_Print(jInfo);
 
     sprintf(homeBuf,
