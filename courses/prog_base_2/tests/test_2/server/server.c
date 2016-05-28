@@ -58,7 +58,6 @@ void server_info(socket_t * client)
 
     cJSON * jInfo = cJSON_CreateObject();
     cJSON_AddItemToObject(jInfo, "student", cJSON_CreateString("Borys Lemeshko"));
-    //cJSON_AddItemToObject(jInfo, "surname", cJSON_CreateString("Krivenko"));
     cJSON_AddItemToObject(jInfo, "group", cJSON_CreateString("KP-51"));
     cJSON_AddItemToObject(jInfo, "variant", cJSON_CreateNumber(16));
     char * pageText = cJSON_Print(jInfo);
