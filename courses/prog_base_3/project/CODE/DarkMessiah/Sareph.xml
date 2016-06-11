@@ -1,0 +1,30 @@
+<!DOCTYPE SpriteDecomposer>
+<sprites image="rollo.png" transparentColor="0">
+ <animation title="stay" delay="110">
+  <cut w="142" x="2" y="129" h="232" row="1" col="1"/>
+  <cut w="144" x="158" y="129" h="232" row="1" col="1"/>
+  <cut w="144" x="316" y="128" h="233" row="1" col="1"/>
+  <cut w="143" x="475" y="129" h="232" row="1" col="1"/>
+  <cut w="144" x="634" y="129" h="232" row="1" col="1"/>
+ </animation>
+ <animation title="walk" delay="110">
+  <cut w="144" x="4" y="921" h="232" row="1" col="1"/>
+  <cut w="165" x="164" y="922" h="231" row="1" col="1"/>
+  <cut w="165" x="340" y="922" h="230" row="1" col="1"/>
+  <cut w="167" x="518" y="922" h="228" row="1" col="1"/>
+  <cut w="167" x="696" y="922" h="228" row="1" col="1"/>
+  <cut w="167" x="872" y="922" h="228" row="1" col="1"/>
+  <cut w="167" x="1054" y="922" h="229" row="1" col="1"/>
+  <cut w="165" x="1226" y="922" h="231" row="1" col="1"/>
+  <cut w="167" x="1400" y="922" h="229" row="1" col="1"/>
+  <cut w="167" x="1582" y="923" h="228" row="1" col="1"/>
+ </animation>
+ <animation title="atack" delay="110">
+  <cut w="144" x="4" y="391" h="230" row="1" col="1"/>
+  <cut w="164" x="159" y="389" h="232" row="1" col="1"/>
+  <cut w="135" x="336" y="389" h="232" row="1" col="1"/>
+  <cut w="151" x="483" y="389" h="232" row="1" col="1"/>
+  <cut w="129" x="650" y="386" h="235" row="1" col="1"/>
+  <cut w="167" x="798" y="389" h="232" row="1" col="1"/>
+ </animation>
+</sprites>
