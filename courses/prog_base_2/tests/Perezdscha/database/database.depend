@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1465818457 source:c:\users\lemes\desktop\perezdscha\database\main.c
+	<stdio.h>
+	<stdlib.h>
+	<sqlite3.h>
+
+1450774966 c:\users\lemes\desktop\sqlite\sqlite3.h
+	<stdarg.h>
+
