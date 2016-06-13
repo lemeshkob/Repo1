@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1465813181 source:c:\users\lemes\desktop\perezdscha\perezdacha\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdlib.h>
+	<stdarg.h>
+	<stddef.h>
+	<setjmp.h>
+	<cmocka.h>
+
+1424096216 c:\program files (x86)\cmocka\include\cmocka.h
+
