@@ -14,12 +14,17 @@
 #include "HealthBar.hpp"
 #include "Dead.hpp"
 #include "Menu.hpp"
+#include "victory.hpp"
+
 
 #include <stdlib.h>
+#include <stdio.h>
+
 
 using namespace sf;
 
 void death();
+void victory();
 
 void RunGame()
 {
@@ -91,7 +96,7 @@ void RunGame()
 	HealthBar healthBar;
 
 	Clock clock;
-
+    int enemyCount = 0;
 	/////////////////// основной цикл  /////////////////////
 	while (window.isOpen())
 	{
@@ -128,8 +133,9 @@ void RunGame()
 		{
 			Entity *b = *it;
 			b->update(time);
-			if (b->life==false)	{ it  = entities.erase(it); delete b;}
+			if (b->life==false)	{ it  = entities.erase(it); delete b; enemyCount++; printf("\n%i", enemyCount);}
 			else it++;
+
 		}
 
 
@@ -137,19 +143,49 @@ void RunGame()
 		healthBar.update(MegaMan.Health);
 
 
+        if(loadlevel == 2){
+                            if(MegaMan.x > 355.0 && MegaMan.x < 450){
+                                if(MegaMan.y < 345.0 && MegaMan.y > 320){
+                                    MegaMan.Health = 0;
+                                    MegaMan.hit=true;
+                                }
+                            }
+                            if(MegaMan.x > 127 && MegaMan.x <548){
+                                if(MegaMan.y <907 && MegaMan.y>875){
+                                    MegaMan.Health = 0;
+                                    MegaMan.hit=true;
+                                }
+                            }
+                              if(MegaMan.x > 670 && MegaMan.x <1440){
+                                if(MegaMan.y <907 && MegaMan.y>875){
+                                    MegaMan.Health = 0;
+                                    MegaMan.hit=true;
+                                }
+                            }
+                                    if(MegaMan.Health == 0){
+
+                                MegaMan.isDead();
+                                death();
+                                window.close();
+                            }
+                                }
+
+
+
 		for(it=entities.begin();it!=entities.end();it++)
 		{
+
 			//1. враги
 			if ((*it)->Name=="Enemy")
 			{
 				Entity *enemy = *it;
 
-				if (enemy->Health<=0) continue;
 
 				if  (MegaMan.getRect().intersects( enemy->getRect() ))
 				    if (MegaMan.dy>0) { enemy->dx=0; MegaMan.dy=-0.2; enemy->Health=0;}
 				    else if (!MegaMan.hit) {
                             MegaMan.Health-=10; MegaMan.hit=true;
+
                             if(MegaMan.Health == 0){
                                 MegaMan.isDead();
                                 death();
@@ -198,9 +234,24 @@ void RunGame()
 		for(it=entities.begin();it!=entities.end();it++)
 			(*it)->draw(window);
 
+			if(loadlevel == 1){
+                if(enemyCount >= 7 && MegaMan.x == 28 && MegaMan.y ==534){
+                    window.close();
+                    victory();
+                }
+			}
+			 if(loadlevel == 2){
+			  if(enemyCount == 5){
+                window.close();
+                victory();
+			}
+        }
 		MegaMan.draw(window);
 		healthBar.draw(window);
 		window.display();
+
+		//printf("%f %f\n",MegaMan.x, MegaMan.y);
+
 	}
 
 

@@ -24,7 +24,7 @@ int menu(RenderWindow & window) {
     m2.createMaskFromColor(Color::White);
     m3.loadFromFile("Exit.png");
     m3.createMaskFromColor(Color::White);
-    ab.loadFromFile("about.jpg");
+    ab.loadFromFile("about.png");
     ab.createMaskFromColor(Color::White);
 
 	Texture menuTexture1, menuTexture2, menuTexture3, aboutTexture, menuBackground;
@@ -34,13 +34,14 @@ int menu(RenderWindow & window) {
 	aboutTexture.loadFromImage(ab);
 	menuBackground.loadFromFile("menuBG.jpg");
 	Sprite menu1(menuTexture1), menu3(menuTexture3), menu2(menuTexture2);
-	Sprite menuBg(menuBackground), about(aboutTexture);
+	Sprite menuBg(menuBackground);
+	Sprite about;
+	about.setTexture(aboutTexture);
 	bool isMenu = 1;
 	int menuNum = 0;
 	menu1.setPosition(100, 30);
 	menu2.setPosition(100, 150);
 	menu3.setPosition(100, 300);
-	about.setPosition(100, 500);
 	menuBg.setPosition(0, 0);
     Level lvl;
 	//////////////////////////////лемч///////////////////
@@ -72,7 +73,6 @@ int menu(RenderWindow & window) {
 		window.draw(menu1);
 		window.draw(menu2);
 		window.draw(menu3);
-		window.draw(about);
 
 		window.display();
 	}

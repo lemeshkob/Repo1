@@ -43,6 +43,7 @@
 			<Add directory="../../../../../SFML/include" />
 		</Compiler>
 		<Linker>
+			<Add library="sfml-audio" />
 			<Add directory="../../../../../SFML/lib" />
 		</Linker>
 		<Unit filename="main.cpp" />
@@ -63,6 +64,7 @@
 		<Unit filename="source/TinyXML/tinyxmlerror.cpp" />
 		<Unit filename="source/TinyXML/tinyxmlparser.cpp" />
 		<Unit filename="source/level.hpp" />
+		<Unit filename="source/victory.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

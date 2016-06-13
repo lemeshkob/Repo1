@@ -1,7 +1,6 @@
 #include "source/Game.hpp"
 
-int main()
-{
+int main(){
 
   RunGame();
 

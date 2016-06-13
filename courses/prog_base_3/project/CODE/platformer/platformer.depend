@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1465747872 source:c:\users\lemes\desktop\platformer\platformer\main.cpp
+1465756369 source:c:\users\lemes\desktop\platformer\platformer\main.cpp
 	"source/Game.hpp"
 
-1465749916 c:\users\lemes\desktop\platformer\platformer\source\game.hpp
+1465757705 c:\users\lemes\desktop\platformer\platformer\source\game.hpp
 	<SFML/Graphics.hpp>
 	<vector>
 	<list>
@@ -16,7 +16,9 @@
 	"HealthBar.hpp"
 	"Dead.hpp"
 	"Menu.hpp"
+	"victory.hpp"
 	<stdlib.h>
+	<stdio.h>
 
 1429784053 c:\sfml\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -462,7 +464,7 @@
 	"tinyxml.h"
 	<windows.h>
 
-1465745665 c:\users\lemes\desktop\platformer\platformer\source\dead.hpp
+1465755362 c:\users\lemes\desktop\platformer\platformer\source\dead.hpp
 	<SFML/Graphics.hpp>
 	"level.hpp"
 	"Animation.hpp"
@@ -474,7 +476,7 @@
 	"HealthBar.hpp"
 	"Game.hpp"
 
-1465750730 c:\users\lemes\desktop\platformer\platformer\source\menu.hpp
+1465752994 c:\users\lemes\desktop\platformer\platformer\source\menu.hpp
 	<SFML/Graphics.hpp>
 	<vector>
 	<list>
@@ -487,5 +489,17 @@
 	"MovingPlatform.hpp"
 	"HealthBar.hpp"
 	"Dead.hpp"
+	"Game.hpp"
+
+1465757319 c:\users\lemes\desktop\platformer\platformer\source\victory.hpp
+	<SFML/Graphics.hpp>
+	"level.hpp"
+	"Animation.hpp"
+	"Entity.hpp"
+	"Bullet.hpp"
+	"Player.hpp"
+	"Enemy.hpp"
+	"MovingPlatform.hpp"
+	"HealthBar.hpp"
 	"Game.hpp"
 
