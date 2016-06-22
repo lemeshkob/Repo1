@@ -1,0 +1,33 @@
+[
+    {
+        "name" : "Borys",
+        "surname" : "Lemeshko",
+		"age" : 17.10,
+		"date" : "1998-08-17",
+        "salary" : 1000
+    },
+
+    {
+        "name" : "Ivan",
+        "surname" : "Ivanov",
+		"age" : 32.7,
+		"date" : "1982-04-09",
+		"salary" : 9000
+
+    },
+
+    {
+        "name" : "Bogdan",
+        "surname" : "Oreshek",
+		"age" : 32.7,
+		"date" : "2005-09-11",
+		"salary" : 3500
+    }
+,{
+        "name" : "Mexico",
+        "surname" : "Cactus",
+		"age" : 18.0,
+		"date" : "2005-09-11",
+		"salary" : 500
+    }
+]
