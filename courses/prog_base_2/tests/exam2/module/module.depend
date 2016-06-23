@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1466674236 source:c:\users\lemes\desktop\комиссия\module\main.c
+	<stdio.h>
+	<stdlib.h>
+	"soc_net.h"
+	<stdlib.h>
+	<stdarg.h>
+	<stddef.h>
+	<setjmp.h>
+	<cmocka.h>
+
+1466672425 c:\users\lemes\desktop\комиссия\module\socialnetwork.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1466672366 source:c:\users\lemes\desktop\комиссия\module\socialnetwork.c
+	"socialNetwork.h"
+
+1466674398 c:\users\lemes\desktop\комиссия\module\soc_net.h
+
+1424096216 c:\program files (x86)\cmocka\include\cmocka.h
+
+1466674503 source:c:\users\lemes\desktop\комиссия\module\soc_net.c
+	"soc_net.h"
+	<string.h>
+	<stdlib.h>
+
